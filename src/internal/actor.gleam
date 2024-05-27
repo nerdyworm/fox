@@ -139,7 +139,7 @@ fn err_worker_not_found(name: String) {
 Hint: queue.register(queue, " <> n <> ", callback) before processing jobs."
 }
 
-@external(erlang, "pgo_queue", "now")
+@external(erlang, "fox_ffi", "now")
 fn now() -> Int {
   panic as "erlang only"
 }
